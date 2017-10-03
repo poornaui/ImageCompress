@@ -35,7 +35,7 @@ app.directive('ngImageCompress', ['$q',
 
 		var jicCompress = function(sourceImgObj, options) {
 			var outputFormat = options.resizeType;
-			var quality = options.resizeQuality * 100 || 70;
+			var quality = options.resizeQuality * 100 || 10;
 			var mimeType = 'image/jpeg';
 			if (outputFormat !== undefined && outputFormat === 'png') {
 				mimeType = 'image/png';
